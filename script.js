@@ -1,10 +1,8 @@
 console.log("kkk");
-function outer() {
-    let a = 10;
-
-    return function() {
+function outer(a) {
+    return function(a) {
         console.log(a);
-    }
+    };
 }
 
 let exec = outer();
