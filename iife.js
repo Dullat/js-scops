@@ -7,13 +7,12 @@
 
 (() => {
   console.log("arow")
-})()
-
+})();
 
 (function (age) {
   console.log("Running the Anon function");
   return `Your are cool and ${age}`;
-})(15);
+})(12);
 
 //example1
 
