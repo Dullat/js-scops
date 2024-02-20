@@ -11,6 +11,8 @@ let user = {
     }
 }
 
+//we can insert some logic in set and set , like error checking etc
+
 console.log(user.fullName);
 
 user.fullName = "alice dullat";
