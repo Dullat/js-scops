@@ -16,3 +16,5 @@ user1.getDetails();
 
 //node protected&private.js <-- does not gonna work in node coz of &
 //so use: node 'protected&private.js'
+
+//you already know private protected. same as java
