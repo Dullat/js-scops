@@ -1,7 +1,7 @@
-class mathUtil{
+class mathUtil {
     static pi = 3.14;
 
-    static universalValue(by){
+    static universalValue(by) {
         console.log(`value of pi is ${this.pi}. ${by}`);
     }
 }
@@ -19,9 +19,9 @@ console.log(ex.pi);//undefined
 //means only single copy is created ,
 //to access it we dont need to create object or instance
 
-class user{
+class user {
     static userCount = 0;
-    constructor(name){
+    constructor(name) {
         console.log(`hi ${name}. your welcome`);
         user.userCount++;//user(class name) not this
     }
@@ -31,3 +31,13 @@ let user1 = new user("dullat");
 let user2 = new user("jatt");
 
 console.log(user.userCount);
+
+
+//Static blocks
+
+// class {
+//     name;
+//     static {                                 <--- static block
+//         this.name = "ilhdkjshaflkjh";
+//     }
+// }
