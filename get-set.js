@@ -39,5 +39,21 @@ console.log(Object.getPrototypeOf(player));
 
 console.log(player.status);
 
+//another example
+
+const obj = {
+  name: "harman",
+  get nameIt() {
+    console.log(this.name)
+  },
+  set nameItD(value) {
+    if (typeof value !== "string") {
+      throw new Error("type must be string")
+    } else this.name = value
+  },
+}
+
+let me = new obj(123)
+
 
 //studied at https://javascript.info/property-accessors
