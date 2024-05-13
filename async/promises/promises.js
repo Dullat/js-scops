@@ -15,3 +15,5 @@ promise.then(
 // it saves from callback hell
 
 // You need to handle the rejected state as well, either by chaining a .catch() method or by adding a second function to .then() to handle the rejection.
+
+// video : https://youtu.be/TnhCX0KkPqs?si=mXzMg3rBSiELcD68
