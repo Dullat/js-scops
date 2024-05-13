@@ -7,7 +7,7 @@ function orderPizza(callback) {
 }
 
 function pizzaReady() {
-  console.log("pizza is ready")
+  console.log(`pizza is ready, ${pizza}`)
 }
 orderPizza(pizzaReady)
 console.log("done")
