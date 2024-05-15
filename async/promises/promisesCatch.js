@@ -18,4 +18,6 @@ function onError(data) {
 
 getWeather(false).then(logData).catch(onError)
 
-// explained in last prog
+// explained in last prog, catch invoked when error occuer in any function doesnt matter if its 1st fun or last
+
+// finially is just used to clearup things , its executed at last it does not matter if it suceed or not
