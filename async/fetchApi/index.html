@@ -7,13 +7,20 @@
   </head>
   <body>
     <img src="" alt="404" />
+    <p></p>
     <script>
       async function getImage() {
         try {
-          let response = await fetch(`https://http.cat/404`, {
-            mode: "cors",
-          })
-          document.querySelector("img").src = response.url
+          let response = await fetch(
+            `https://worldtimeapi.org/api/timezone/America/New_York`,
+            {
+              mode: "cors",
+            }
+          )
+
+          data = await response.json() // .json is also async
+          console.log(data)
+          document.querySelector("p").textContent = data.datetime
         } catch {
           console.log("failed")
         }
