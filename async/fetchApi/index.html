@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="" alt="404" />
+    <script>
+      async function getImage() {
+        try {
+          let response = await fetch(`https://http.cat/404`, {
+            mode: "cors",
+          })
+          document.querySelector("img").src = response.url
+        } catch {
+          console.log("failed")
+        }
+      }
+      getImage()
+    </script>
+  </body>
+</html>
