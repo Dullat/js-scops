@@ -19,7 +19,7 @@ async function start() {
   let result = await getData() // wait till promise resolves
   clearInterval(interval) // stop the countdown
   console.log(result)
-  console.log("ji") // it also gonna take 8s coz await stops the execution of whole fun
+  console.log("ji") // it also gonna take 8s coz await stops the execution of whole fun but i does not stop interval , both run concurrently
 }
 
 start()
